@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>book</title>
+        <head>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="css/bootstrap-grid.css">
+            <link rel="stylesheet" href="css/bootstrap-reboot.css">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="extrastyle/style.css">
+            <link rel="stylesheet" href="extrastyle/fonts.css">
+            <script src="js/bootstrap.bundle.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+            <link rel="icon" href="images/Read.png">
+            
+        </head>
+    </head>
+    <body>
+        <div class="col rounded ml-3 loginMain">
+            <div class="bg-light rounded-0 px-2 py-2 bpgNino mb-3" id="displayLogin" style="display: none;">
+                <form>
+                    <h5><strong>ავტორიზაცია</strong></h5>
+                    <hr style="margin-top: 0rem;">
+                    <div class="form-group">
+                        <input type="email" class="form-control rounded-sm" placeholder="მეილი" style="max-width: 300px;" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control rounded-sm" placeholder="პაროლი" style="max-width: 300px;">
+                    </div>
+
+                    <button type="submit" class="btn btn-dark rounded-0">შესვლა</button>
+                    <a class="navbar-brand navbarTFsize ml-5" onclick="showReg()" href="#">რეგისტრაცია</a>
+                </form>
+            </div>
+
+            <div class="bg-light rounded-0 px-2 py-2 bpgNino mb-3" id="displayRegistration" style="display: block;">
+                <form>
+                    <h5><strong>რეგისტრაცია</strong></h5>
+                    <hr style="margin-top: 0rem;">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-sm rounded-sm" placeholder="სახელი" style="max-width: 300px;">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-sm rounded-sm" placeholder="გვარი" style="max-width: 300px;">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-sm rounded-sm" placeholder="მეილი" style="max-width: 300px;" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="date" class="form-control form-control-sm rounded-sm" placeholder="გვარი" style="max-width: 300px;">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-sm rounded-sm" placeholder="პაროლი" style="max-width: 300px;">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-sm rounded-sm" placeholder="გაიმეორეთ პაროლი" style="max-width: 300px;">
+                    </div>
+
+                    <button type="submit" class="btn btn-dark rounded-0">რეგისტრაცია</button>
+                    <a class="navbar-brand navbarTFsize ml-4" onclick="showLogin()" href="#">ლოგინი</a>
+                </form>
+            </div>
+
+        </div>
+        <script>
+            function showReg() {
+                document.getElementById("displayRegistration").style.display = "block";
+                document.getElementById("displayLogin").style.display = "none";
+            }
+    
+            function showLogin() {
+                document.getElementById("displayRegistration").style.display = "none";
+                document.getElementById("displayLogin").style.display = "block";
+            }
+        </script>
+        <style>
+            .navbrand-img {
+    max-width: 130px !important;
+}
+
+.navbrand-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px !important;
+    position: relative !important;
+    margin-top: 40px !important;
+    display: none;
+}
+
+.navbrand-hovered:hover {
+    margin-left: 5px !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.navitem-p-hovered:hover {
+    padding-left: 30px !important;
+    transition: 0.3s;
+}
+
+.navlinkCollapsedtxtSize {
+    font-size: 2.4rem !important;
+}
+
+.navlinkCollapsedtxtSize-2 {
+    font-size: 2rem !important;
+}
+
+.borderLeft {
+    border-left: none;
+}
+
+.borderRight {
+    border-right: none;
+}
+
+.navbarWidth {
+    width: auto;
+}
+
+.navlink-sign {
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: 95% top;
+}
+
+.navlink-sign:hover {
+    background-image: url("../images/sign.png");
+}
+
+.fixedSign {
+    background-size: auto 40%;
+    background-repeat: no-repeat;
+    background-position: 95% top;
+    background-image: url("../images/sign.png");
+}
+
+.topBooksLeft {
+    display: none;
+}
+
+.postImage {
+    width: 280px !important;
+}
+
+.thumbImage {
+    width: 100% !important;
+}
+
+.navbarTFsize {
+    font-size: 25px;
+}
+
+.navTextHidden1 {
+    display: inline;
+}
+
+.navTextHidden2 {
+    display: none;
+}
+
+.loginMain {
+    display: none;
+}
+
+.offset-fromRight {
+    margin-right: 135px;
+}
+
+#displayLogin {
+    display: block;
+}
+
+#displayRegistration {
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+    .navbrand-img {
+        max-width: 130px !important;
+    }
+    .navbrand-text {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100px !important;
+        position: relative !important;
+        margin-top: 40px !important;
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbrand-img {
+        max-width: 45px !important;
+    }
+    .navbrand-text {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 46px !important;
+        position: relative !important;
+        margin-top: 0 !important;
+        display: inline;
+    }
+    .navlinkCollapsedtxtSize {
+        font-size: 1.4rem !important;
+    }
+    .navlinkCollapsedtxtSize-2 {
+        font-size: 1.3rem !important;
+    }
+    .borderLeft {
+        border-left: 1px solid gray;
+    }
+    .borderRight {
+        border-right: 1px solid gray;
+    }
+    .navbarWidth {
+        width: 14em;
+    }
+    .navlink-sign {
+        background-size: auto 40%;
+    }
+    .topBooksLeft {
+        display: inline;
+    }
+    .postImage {
+        width: 220px !important;
+    }
+    .navbarTFsize {
+        font-size: 14px;
+    }
+    .navTextHidden1 {
+        display: none;
+    }
+    .navTextHidden2 {
+        display: inline;
+    }
+    .loginMain {
+        display: inline;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbrand-img {
+        max-width: 45px !important;
+    }
+    .navbrand-text {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 46px !important;
+        position: relative !important;
+        margin-top: 0 !important;
+        display: inline;
+    }
+    .navlinkCollapsedtxtSize {
+        font-size: 1.4rem !important;
+    }
+    .navlinkCollapsedtxtSize-2 {
+        font-size: 1.3rem !important;
+    }
+    .borderLeft {
+        border-left: 1px solid gray;
+    }
+    .borderRight {
+        border-right: 1px solid gray;
+    }
+    .navlink-sign {
+        background-size: auto 40%;
+    }
+    .topBooksLeft {
+        display: inline;
+    }
+    .navbarTFsize {
+        font-size: 14px;
+    }
+    .navTextHidden1 {
+        display: none;
+    }
+    .navTextHidden2 {
+        display: inline;
+    }
+    .loginMain {
+        display: inline;
+    }
+}
+
+/* RESPONSIVE */
+
+.bg-darklight {
+    background-color: #dedede;
+}
+
+.nav-toggler-lg {
+    font-size: 4.25rem !important;
+    right: 5%;
+}
+
+.nav-item-hovered:hover {
+    background-color: #cdcdcd;
+    transition: 0.0s;
+}
+
+.border-darklight {
+    border-color: #bcbcbc !important;
+}
+
+.bpgNino {
+    font-family: 'bpgNino';
+}
+
+.navbar-boxshadow {
+    box-shadow: 0 1px 5px 0px #454545;
+}
+
+.dropdown-item:active {
+    background-color: #bcbcbc;
+}
+
+.lgi-px {
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem !important;
+}
+
+.cursorPointer {
+    cursor: pointer !important;
+}
+        </style>
+    </body>
+</html>
