@@ -47,6 +47,27 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <button onclick="dark()">dark mode</button>
+
+                        <script>
+                            function dark() {
+                                var element = document.body;
+                                element.classList.toggle("dark-mode");
+                            }
+                        </script>
+                        <style>
+                            body {
+                                background-color: white;
+                                color: black;
+                            }
+                            
+                            .dark-mode {
+                                background-color: black;
+                                color: white;
+                            }
+                        </style>
+                    </li>
                 </ul>
             </div>
         </div>
