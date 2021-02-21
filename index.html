@@ -19,149 +19,154 @@
 
 </head>
 <!--NAWBAR-->
+<body>
 <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="onoffswitch">
-                            <input type="checkbox" onclick="dark()" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
-                            <label class="onoffswitch-label" for="myonoffswitch">
-                                <span class="onoffswitch-inner"></span>
-                                <span class="onoffswitch-switch"></span>
-                            </label>
-                        </div>
-                        <style>
-                            .onoffswitch {
-                                position: relative;
-                                width: 90px;
-                                -webkit-user-select: none;
-                                -moz-user-select: none;
-                                -ms-user-select: none;
-                            }
-                            
-                            .onoffswitch-checkbox {
-                                position: absolute;
-                                opacity: 0;
-                                pointer-events: none;
-                            }
-                            
-                            .onoffswitch-label {
-                                display: block;
-                                overflow: hidden;
-                                cursor: pointer;
-                                border: 2px solid #000000;
-                                border-radius: 20px;
-                            }
-                            
-                            .onoffswitch-inner {
-                                display: block;
-                                width: 200%;
-                                margin-left: -100%;
-                                transition: margin 0.3s ease-in 0s;
-                            }
-                            
-                            .onoffswitch-inner:before,
-                            .onoffswitch-inner:after {
-                                display: block;
-                                float: left;
-                                width: 50%;
-                                height: 30px;
-                                padding: 0;
-                                line-height: 30px;
-                                font-size: 14px;
-                                color: white;
-                                font-family: Trebuchet, Arial, sans-serif;
-                                font-weight: bold;
-                                box-sizing: border-box;
-                            }
-                            
-                            .onoffswitch-inner:before {
-                                content: "ON";
-                                padding-left: 10px;
-                                background-color: #EEEEEE;
-                                color: #FFFFFF;
-                            }
-                            
-                            .onoffswitch-inner:after {
-                                content: "OFF";
-                                padding-right: 10px;
-                                background-color: #EEEEEE;
-                                color: #999999;
-                                text-align: right;
-                            }
-                            
-                            .onoffswitch-switch {
-                                display: block;
-                                width: 13px;
-                                margin: 8.5px;
-                                background: #000000;
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                right: 56px;
-                                border: 2px solid #000000;
-                                border-radius: 20px;
-                                transition: all 0.3s ease-in 0s;
-                            }
-                            
-                            .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
-                                margin-left: 0;
-                            }
-                            
-                            .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
-                                right: 0px;
-                                background-color: #FFFFFF;
-                            }
-                        </style>
-
-                        <script>
-                            function dark() {
-                                var element = document.body;
-                                element.classList.toggle("dark-mode");
-                            }
-                        </script>
-                        <style>
-                            body {
-                                background-color: white;
-                                color: black;
-                            }
-                            
-                            .dark-mode {
-                                background-color: black;
-                                color: white;
-                            }
-                        </style>
-                    </li>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <div class="col-md-auto offset-md-auto">
+                    <div class="onoffswitch">
+                        <input type="checkbox" onclick="dark()" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+                    <style>
+                        .onoffswitch {
+                            position: relative;
+                            width: 90px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                        }
+                        
+                        .onoffswitch-checkbox {
+                            position: absolute;
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+                        
+                        .onoffswitch-label {
+                            display: block;
+                            overflow: hidden;
+                            cursor: pointer;
+                            border: 2px solid #000000;
+                            border-radius: 20px;
+                        }
+                        
+                        .onoffswitch-inner {
+                            display: block;
+                            width: 200%;
+                            margin-left: -100%;
+                            transition: margin 0.3s ease-in 0s;
+                        }
+                        
+                        .onoffswitch-inner:before,
+                        .onoffswitch-inner:after {
+                            display: block;
+                            float: left;
+                            width: 50%;
+                            height: 30px;
+                            padding: 0;
+                            line-height: 30px;
+                            font-size: 14px;
+                            color: white;
+                            font-family: Trebuchet, Arial, sans-serif;
+                            font-weight: bold;
+                            box-sizing: border-box;
+                        }
+                        
+                        .onoffswitch-inner:before {
+                            content: "ON";
+                            padding-left: 10px;
+                            background-color: #EEEEEE;
+                            color: #FFFFFF;
+                        }
+                        
+                        .onoffswitch-inner:after {
+                            content: "OFF";
+                            padding-right: 10px;
+                            background-color: #EEEEEE;
+                            color: #999999;
+                            text-align: right;
+                        }
+                        
+                        .onoffswitch-switch {
+                            display: block;
+                            width: 13px;
+                            margin: 8.5px;
+                            background: #000000;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 56px;
+                            border: 2px solid #000000;
+                            border-radius: 20px;
+                            transition: all 0.3s ease-in 0s;
+                        }
+                        
+                        .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+                            margin-left: 0;
+                        }
+                        
+                        .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+                            right: 0px;
+                            background-color: #FFFFFF;
+                        }
+                    </style>
+
+                    <script>
+                        function dark() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                        }
+                    </script>
+                    <style>
+                        body {
+                            background-color: white;
+                            color: black;
+                        }
+                        
+                        .dark-mode {
+                            background-color: black;
+                            color: white;
+                        }
+                    </style>
+            </form>
+          </div>
         </div>
-    </nav>
-</div>
+      </nav>
+                       
+                    
 <!--NAWBAR-->
 
 
