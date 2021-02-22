@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>PDF</title>
+    <title>Vtube</title>
     <link rel="stylesheet" href="css\bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
@@ -36,13 +36,41 @@
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <button type="button" class="list-group-item list-group-item-action bg-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         SING UP
+        </button>
         
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+               
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        <a href="#" class="list-group-item list-group-item-action bg-light">HOME</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">POPULAR</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">LIBRARY</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">HYSTORY</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">YOUR VIDEO</a>
+        
+        <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+             
       </div>
     </div>
     <!--/sidebar -->
@@ -51,7 +79,7 @@
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-outline-secondary" id="menu-toggle">Toggle Menu</button>
+        <button class="btn btn-outline-secondary" id="menu-toggle">Vtube</button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -59,24 +87,32 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
           </ul>
+         
+            <input type="text" name="search" placeholder="Search..">
+              <style> 
+                input[type=text] {
+                  width: 100px;
+                  
+                  box-sizing: border-box;
+                  border: 2px solid #ccc;
+                  border-radius: 20px;
+                  font-size: 7px;
+                  background-color: white;
+                  background-image: url('searchicon.png');
+                  background-position: 10px 10px; 
+                  background-repeat: no-repeat;
+                  padding: 12px 20px 12px 30px;
+                  -webkit-transition: width 0.4s ease-in-out;
+                  transition: width 0.4s ease-in-out;
+                }
+                
+                input[type=text]:focus {
+                  width: 80%;
+                }
+                </style>
+   
+          
         </div>
         <form class="d-flex">
           <div class="col-md-auto offset-md-auto">
@@ -136,15 +172,15 @@
                   .onoffswitch-inner:before {
                       content: "ON";
                       padding-left: 10px;
-                      background-color: #EEEEEE;
+                      background-color: #000000;
                       color: #FFFFFF;
                   }
                   
                   .onoffswitch-inner:after {
                       content: "OFF";
                       padding-right: 10px;
-                      background-color: #EEEEEE;
-                      color: #999999;
+                      background-color: #ffffff;
+                      color: #000000;
                       text-align: right;
                   }
                   
@@ -180,7 +216,7 @@
               </script>
               <style>
                   body {
-                      background-color: white;
+                     
                       color: black;
                   }
                   
