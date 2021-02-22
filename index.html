@@ -55,11 +55,29 @@
           </div>
         </div>
         </div>
-        <a href="#" class="list-group-item list-group-item-action bg-light">HOME</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">POPULAR</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">LIBRARY</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">HYSTORY</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">YOUR VIDEO</a>
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">HOME</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">TV</a>
+        <div class="dropdown">
+          <button class="list-group-item list-group-item-action bg-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           FILMS
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="list-group-item list-group-item-action bg-lightm" href="#">Action</a></li>
+            <li><a class="list-group-item list-group-item-action bg-light" href="#">Another action</a></li>
+            <li><a class="list-group-item list-group-item-action bg-light" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="list-group-item list-group-item-action bg-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           SERIALS
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="list-group-item list-group-item-action bg-lightm" href="#">Action</a></li>
+            <li><a class="list-group-item list-group-item-action bg-light" href="#">Another action</a></li>
+            <li><a class="list-group-item list-group-item-action bg-light" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <a href="#" class="list-group-item list-group-item-action bg-light">ANIME</a>
         
         <div id="google_translate_element"></div>
 
@@ -227,10 +245,59 @@ function googleTranslateElementInit() {
               </style>
       </form>
       </nav>
-
+<!--slider-->
       <div class="container-fluid">
-        
+        <div>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="height:400 background-position-center">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video width="1500" height="500" controls>
+                  <source src="video/Iron Man- Highway to Hell _ AC_DC.mp4" type="video/mp4">
+                               
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                  
+                  <p>Iron man</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <video width="1500" height="500" controls>
+                  <source src="video/The Wolf of Wall Street Official Trailer.mp4" type="video/mp4">
+                      
+                  </video>
+                <div class="carousel-caption d-none d-md-block">
+                  
+                  <p>The wolf of wall street</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <video width="1500" height="500" controls>
+                  <source src="video/Dunkirk - Trailer 1 [HD].mp4" type="video/mp4">
+                            
+                  </video>
+                <div class="carousel-caption d-none d-md-block">
+                  
+                  <p>Dunkirk</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
+      <!--slider-->
     </div>
   
 
@@ -372,9 +439,9 @@ body {
     </style>
     </div>
     <!--sociial media-->
-<!-- left-list-->
+<!--SLIDER-->
 
-<!--left-list-->
+<!--SLIDER-->
     
 </body>
 
