@@ -603,7 +603,7 @@
 
   var SWIPE_THRESHOLD = 40;
   var Default = {
-    interval: 5000,
+   
     keyboard: true,
     slide: false,
     pause: 'hover',
@@ -611,7 +611,7 @@
     touch: true
   };
   var DefaultType = {
-    interval: '(number|boolean)',
+   
     keyboard: 'boolean',
     slide: '(boolean|string)',
     pause: '(string|boolean)',
