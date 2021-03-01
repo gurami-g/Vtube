@@ -1040,11 +1040,11 @@
   var DATA_API_KEY$2 = '.data-api';
   var ARROW_LEFT_KEY = 'ArrowLeft';
   var ARROW_RIGHT_KEY = 'ArrowRight';
-  var TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
+  var TOUCHEVENT_COMPAT_WAIT = 999999; // Time for mouse compat events to fire after touch
 
   var SWIPE_THRESHOLD = 40;
   var Default = {
-    interval: 5000,
+    interval: 99999999,
     keyboard: true,
     slide: false,
     pause: 'hover',
